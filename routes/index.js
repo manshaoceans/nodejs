@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const router = express.Router();
-
+import puppeteer from "puppeteer";
 // Serve the index.html file for the root route
 async function generatePdfFromHTML(html) {
   const browser = await puppeteer.launch({
