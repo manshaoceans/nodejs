@@ -8,22 +8,8 @@ async function generatePdfFromHTML(html) {
     headless: true,
     args: [
       "--no-sandbox",
-      "--disable-setuid-sandbox",
-      "--disable-dev-shm-usage",
-      "--disable-accelerated-2d-canvas",
-      "--no-first-run",
-      "--no-zygote",
-      "--disable-gpu",
-      "--disable-extensions",
-      "--disable-default-apps",
-      "--disable-translate",
-      "--disable-sync",
-      "--disable-background-networking",
-      "--disable-background-timer-throttling",
-      "--disable-renderer-backgrounding",
-      "--disable-backgrounding-occluded-windows",
-      "--disable-ipc-flooding-protection",
-      "--single-process",
+      "--disable-setuid-sandbox"
+
     ],
   });
 
